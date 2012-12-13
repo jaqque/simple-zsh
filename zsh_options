@@ -1,0 +1,198 @@
+# All zsh options
+# Zsh can emulate other shells, if invoked with a different name
+# We will assume that you are invoking it as zsh (why else use zsh?)
+# All options are defined opposite to their default.
+# To activate a particular option, uncomment it.
+
+# See zshoptions(1) for complete descriptions
+
+# Changing Directories
+#setopt AUTO_CD         # if command is a directory, cd to it
+#setopt AUTO_PUSHD      # cd will push old directory onto stack
+#setopt CDABLE_VARS     # prepend ~ to argument to cd
+#setopt CHASE_DOTS      # resolve directories that have .. in them
+#setopt CHASE_LINKS     # cd to realdir
+#setopt POSIX_CD        # cd,chdir,pushd act in a POSIX compatible manner
+#setopt PUSHD_IGNORE_DUPS # avoid pushing multiple copies of the same dir
+#setopt PUSHD_MINUS     # swap meaning ot + and - 
+#setopt PUSHD_SILENT    # avoid printing directory after pushd/popd
+#setopt PUSHD_TO_HOME   # pushd assumes pushd $HOME
+
+# Completion
+#unsetopt ALWAYS_LAST_PROMPT
+#setopt ALWAYS_TO_END
+#unsetopt AUTO_LIST
+#unsetopt AUTO_MENU
+#setopt AUTO_NAME_DIRS
+#unsetopt AUTO_PARAM_KEYS
+#unsetopt AUTO_PARAM_SLASH
+#unsetopt AUTO_REMOVE_SLASH
+#setopt BASH_AUTO_LIST
+#setopt COMPLETE_ALIASES
+#setopt COMPLETE_IN_WORD
+#setopt GLOB_COMPLETE
+#unsetopt HASH_LIST_ALL
+#unsetopt LIST_AMBIGUOUS
+#unsetopt LIST_BEEP
+#setopt LIST_PACKED
+#setopt LIST_ROWS_FIRST
+#unsetopt LIST_TYPES
+#setopt MENU_COMPLETE
+#setopt REC_EXACT
+
+# Expansion and Globbing
+#unsetopt BAD_PATTERN
+#unsetopt BARE_GLOB_QUAL
+#setopt BRACE_CCL
+#unsetopt CASE_GLOB
+#unsetopt CASE_MATCH
+#setopt CSH_NULL_GLOB
+#unsetopt EQUALS
+#setopt EXTENDED_GLOB
+#unsetopt GLOB
+#setopt GLOB_ASSIGN
+#setopt GLOB_DOTS
+#setopt GLOB_SUBST
+#setopt HIST_SUBST_PATTERN
+#setopt IGNORE_BRACES
+#setopt KSH_GLOB
+#setopt MAGIC_EQUAL_SUBST
+#setopt MARK_DIRS
+#unsetopt MULTIBYTE
+#unsetopt NOMATCH
+#setopt NULL_GLOB
+#setopt NUMERIC_GLOB_SORT
+#setopt RC_EXPAND_PARAM
+#unsetopt REMATCH_PCRE
+#setopt SH_GLOB
+#unsetopt UNSET
+#setopt WARN_CREATE_GLOBAL
+
+# History
+#unsetopt APPEND_HISTORY
+#unsetopt BANG_HIST
+#setopt EXTENDED_HISTORY
+#setopt HIST_ALLOW_CLOBBER
+#unsetopt HIST_BEEP
+#setopt HIST_EXPIRE_DUPS_FIRST
+#setopt HIST_FCNTL_LOCK
+#setopt HIST_FIND_NO_DUPS
+#setopt HIST_IGNORE_ALL_DUPS
+#setopt HIST_IGNORE_DUPS
+#setopt HIST_IGNORE_SPACE
+#setopt HIST_LEX_WORDS
+#setopt HIST_NO_FUNCTIONS
+#setopt HIST_NO_STORE
+#setopt HIST_REDUCE_BLANKS
+#unsetopt HIST_SAVE_BY_COPY
+#setopt HIST_SAVE_NO_DUPS
+#setopt HIST_VERIFY
+#setopt INC_APPEND_HISTORY
+#setopt SHARE_HISTORY
+
+# Initialisation
+#setopt ALL_EXPORT
+#unsetopt GLOBAL_EXPORT
+#unsetopt GLOBAL_RCS
+#unsetopt RCS
+
+# Input/Output
+#unsetopt ALIASES
+#unsetopt CLOBBER
+#setopt CORRECT
+#setopt CORRECT_ALL
+#setopt DVORAK
+#unsetopt FLOW_CONTROL
+#setopt IGNORE_EOF
+#setopt INTERACTIVE_COMMENTS
+#unsetopt HASH_CMDS
+#unsetopt HASH_DIRS
+#setopt MAIL_WARNING
+#setopt PATH_DIRS
+#setopt PATH_SCRIPT
+#setopt PRINT_EIGHT_BIT
+#setopt PRINT_EXIT_VALUE
+#setopt RC_QUOTES
+#setopt RM_STAR_SILENT
+#setopt RM_STAR_WAIT
+#unsetopt SHORT_LOOPS
+#setopt SUN_KEYBOARD_HACK
+
+# Job Control
+#setopt AUTO_CONTINUE
+#setopt AUTO_RESUME
+#unsetopt BG_NICE
+#unsetopt CHECK_JOBS
+#unsetopt HUP
+#setopt LONG_LIST_JOBS
+#setopt MONITOR
+#unsetopt NOTIFY
+#setopt POSIX_JOBS
+
+# Prompting
+#setopt PROMPT_BANG
+#unsetopt PROMPT_CR
+#unsetopt PROMPT_SP
+#unsetopt PROMPT_PERCENT
+#setopt PROMPT_SUBST
+#setopt TRANSIENT_RPROMPT
+
+# Scripts and Functions
+#setopt C_BASES
+#setopt C_PRECEDENCES
+#setopt DEBUG_BEFORE_CMD
+#setopt ERR_EXIT
+#setopt ERR_RETURN
+#unsetopt EVAL_LINENO
+#unsetopt EXEC
+#unsetopt FUNCTION_ARGZERO
+#setopt LOCAL_OPTIONS
+#setopt LOCAL_TRAPS
+#unsetopt MULTI_FUNC_DEF
+#unsetopt MULTIOS
+#setopt OCTAL_ZEROES
+#setopt SOURCE_TRACE
+#setopt TYPESET_SILENT
+#setopt VERBOSE
+#setopt XTRACE
+
+# Shell Emulation
+#setopt BASH_REMATCH
+#setopt BSD_ECHO
+#setopt CSH_JUNKIE_HISTORY
+#setopt CSH_JUNKIE_LOOPS
+#setopt CSH_JUNKIE_QUOTES
+#setopt CSH_NULLCMD
+#setopt KSH_ARRAYS
+#setopt KSH_AUTOLOAD
+#setopt KSH_OPTION_PRINT
+#setopt KSH_TYPESET
+#setopt KSH_ZERO_SUBSCRIPT
+#setopt POSIX_ALIASES
+#setopt POSIX_BUILTINS
+#setopt POSIX_IDENTIFIERS
+#setopt POSIX_STRINGS
+#setopt POSIX_TRAPS
+#setopt SH_FILE_EXPANSION
+#setopt SH_NULLCMD
+#setopt SH_OPTION_LETTERS
+#setopt SH_WORD_SPLIT
+#setopt TRAPS_ASYNC
+
+# Shell State -- it makes little sense to chnge any of these
+#setopt INTERACTIVE
+#setopt LOGIN
+#setopt PRIVILEGED
+#setopt RESTRICTED
+#setopt SHIN_STDIN
+#setopt SINGLE_COMMAND
+
+# ZLE (zsh line editor)
+#unsetopt BEEP
+#setopt COMBINING_CHARS
+#setopt EMACS
+#setopt OVERSTRIKE
+#setopt SINGLE_LINE_ZLE
+#setopt VI
+#setopt ZLE
+
