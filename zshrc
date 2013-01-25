@@ -15,14 +15,12 @@ sz_zshrc_dirs=(
   $simple_zsh/zshrc.d/by-uid/$UID
 )
 for i in {$#sz_zshrc_dirs..1}; do
-  if [[ -d $sz_zshrc_dirs[i] ]]; then continue; fi
-  sz_zshrc_dirs[i]=() # remove element
+  [[ ! -d $sz_zshrc_dirs[i] ]] && sz_zshrc_dirs[i]=() # remove element
 done
 
 for dir in $sz_zshrc_dirs; do
-  if [[ ! -d $dir ]]; then continue; fi
   for file in $dir/*(.); do
-    if [[ ! -r $file ]]; then continue; fi
+    [[ ! -r $file ]] && continue
 	source $file
   done
 done
